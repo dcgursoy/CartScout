@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Refurbished electronics multipack</title>
+  <desc id="desc">A mixed pile of old electronics and small devices.</desc>
+  <rect width="320" height="220" fill="#fff8e7"/>
+  <rect x="48" y="126" width="224" height="42" rx="12" fill="#cbd7e5"/>
+  <rect x="74" y="58" width="88" height="64" rx="10" fill="#16202b"/>
+  <rect x="85" y="69" width="66" height="39" rx="5" fill="#2c6bff"/>
+  <rect x="180" y="72" width="54" height="92" rx="12" fill="#566577"/>
+  <rect x="190" y="84" width="34" height="57" rx="5" fill="#eff9f5"/>
+  <circle cx="207" cy="151" r="5" fill="#ffffff"/>
+  <path d="M103 142c23-24 59 22 91-9" fill="none" stroke="#d95043" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="244" cy="117" r="18" fill="#d79a16"/>
+</svg>

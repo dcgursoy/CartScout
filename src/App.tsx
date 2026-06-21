@@ -28,7 +28,6 @@ import {
 import { motion } from 'framer-motion'
 import { useEffect, useState, type FormEvent } from 'react'
 import './App.css'
-import { metricSnapshots } from './data/metrics'
 import { stackPartners } from './data/stack'
 import {
   componentScores,
@@ -80,8 +79,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Sponsored',
     title: 'Wireless charger stand, cable not included',
     price: '$41.99',
-    image:
-      'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/wireless-charger.svg',
     imageAlt: 'Wireless charger stand on a desk',
     reason: (requestLabel: string) =>
       `Ignores the actual "${requestLabel}" request and jumps to a promoted accessory.`,
@@ -90,8 +88,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Popular',
     title: 'Assorted home starter bundle',
     price: '$68.00',
-    image:
-      'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/home-starter-bundle.svg',
     imageAlt: 'Home goods and storage items',
     reason: () => 'Looks plausible but misses the required product, budget, and evidence.',
   },
@@ -99,8 +96,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Fast ship',
     title: 'Refurbished electronics multipack',
     price: '$29.50',
-    image:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/refurbished-electronics.svg',
     imageAlt: 'Mixed electronics on a table',
     reason: () => 'Optimizes for delivery text instead of matching constraints.',
   },
@@ -108,8 +104,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Trending',
     title: 'Premium leather travel organizer',
     price: '$54.95',
-    image:
-      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/leather-travel-organizer.svg',
     imageAlt: 'Travel accessory product photography',
     reason: () => 'Confuses adjacent shopping context with the user goal.',
   },
@@ -117,8 +112,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Limited deal',
     title: 'Smart mug warmer kit',
     price: '$64.00',
-    image:
-      'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/mug-warmer.svg',
     imageAlt: 'Coffee mug on a desk',
     reason: () => 'Optimizes for click appeal while ignoring the requested product category.',
   },
@@ -126,8 +120,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Recommended',
     title: 'Designer desk lamp bundle',
     price: '$72.99',
-    image:
-      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/desk-lamp.svg',
     imageAlt: 'Desk lamp in a workspace',
     reason: () => 'Looks useful, but does not satisfy the search constraints.',
   },
@@ -135,8 +128,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'High rating',
     title: 'Portable smoothie blender',
     price: '$39.95',
-    image:
-      'https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/smoothie-blender.svg',
     imageAlt: 'Small blender with fruit',
     reason: () => 'Overweights rating signals instead of the requested item.',
   },
@@ -144,8 +136,7 @@ const sponsoredSuggestionCatalog = [
     tag: 'Bundle',
     title: 'Cable organizer and adapter pack',
     price: '$22.00',
-    image:
-      'https://images.unsplash.com/photo-1601524909162-ae8725290836?auto=format&fit=crop&w=320&q=80',
+    image: '/product-images/cable-organizer.svg',
     imageAlt: 'Charging cables and adapters',
     reason: () => 'Matches the shopping vibe but not the user intent.',
   },
@@ -176,7 +167,6 @@ function App() {
       <CompressrSection />
       <ImprovementLoop />
       <ReplaySection />
-      <MetricsSection />
       <TrainingArtifactsSection />
       <StackSection />
     </main>
@@ -264,7 +254,7 @@ function ShoppingIntro({ onContinue }: { onContinue: () => void }) {
                 transition={{ delay: 0.55 }}
               >
                 <div>
-                  <strong>That mismatch is the problem ScourRL trains against</strong>
+                  <strong>That mismatch is the problem CartScout trains against</strong>
                 </div>
                 <button onClick={onContinue} type="button">
                   <span>Open CartScout project</span>
@@ -293,7 +283,6 @@ function TopNav() {
         <a href="#compressr">compressr</a>
         <a href="#loop">loop</a>
         <a href="#replay">replay</a>
-        <a href="#metrics">metrics</a>
         <a href="#artifacts">artifacts</a>
       </nav>
     </header>
@@ -815,79 +804,6 @@ function HudTraceDemo({
   )
 }
 
-function MetricsSection() {
-  const visibleMetricSnapshots = metricSnapshots.filter(
-    (snapshot) => snapshot.modelLabel !== 'Frontier reference snapshot',
-  )
-  const primary = visibleMetricSnapshots[0]
-  const bestReward = Math.max(...visibleMetricSnapshots.flatMap((snapshot) => snapshot.rewards))
-
-  return (
-    <section className="section-block metrics-section" id="metrics">
-      <div className="section-heading">
-        <span className="eyebrow">
-          <BarChart3 size={16} />
-          Eval snapshots
-        </span>
-        <h2>Real local hard-eval numbers, shown after the story.</h2>
-        <p>
-          These are static snapshots generated from the local CartScout JSONL runs, bundled into the
-          site for a no-backend demo.
-        </p>
-      </div>
-
-      <div className="metrics-grid">
-        {visibleMetricSnapshots.map((snapshot) => (
-          <article className="metric-card" key={snapshot.sourceFile}>
-            <div className="metric-card-head">
-              <span>{snapshot.modelShort}</span>
-              <strong>{formatPct(snapshot.avgReward)}</strong>
-            </div>
-            <h3>{snapshot.modelLabel}</h3>
-            <p>{snapshot.note}</p>
-            <div className="metric-row">
-              <span>Success</span>
-              <strong>
-                {snapshot.successCount}/{snapshot.records}
-              </strong>
-            </div>
-            <div className="metric-row">
-              <span>Completed</span>
-              <strong>
-                {snapshot.completed}/{snapshot.records}
-              </strong>
-            </div>
-            <div className="reward-strip" aria-label={`${snapshot.modelLabel} reward distribution`}>
-              {snapshot.rewards.map((reward, index) => (
-                <i
-                  key={`${snapshot.sourceFile}-${index}`}
-                  style={{
-                    height: `${Math.max(8, (reward / bestReward) * 100)}%`,
-                    background: reward >= 0.9 ? 'var(--green)' : reward > 0 ? 'var(--amber)' : 'var(--red)',
-                  }}
-                />
-              ))}
-            </div>
-            <small>{snapshot.sourceFile}</small>
-          </article>
-        ))}
-      </div>
-
-      <div className="takeaway-band">
-        <Target size={22} />
-        <div>
-          <strong>Demo thesis</strong>
-          <span>
-            If a small Qwen policy can collect grounded, compressible trajectories on hard browser
-            tasks, the dataset becomes the asset that keeps improving the agent.
-          </span>
-        </div>
-        <strong>{primary.successCount}/20 pass@0.9</strong>
-      </div>
-    </section>
-  )
-}
-
 function TrainingArtifactsSection() {
   const bestStageReward = Math.max(...trainingStages.map((stage) => stage.rewardMean))
   const finalStage = trainingStages[trainingStages.length - 1]
@@ -1039,9 +955,7 @@ function StackSection() {
       <div className="stack-grid">
         {stackPartners.map((partner) => (
           <article className="stack-card" key={partner.name}>
-            <div className={`partner-mark ${partner.mark === 'c' ? 'compressr-mark' : ''}`}>
-              {partner.mark}
-            </div>
+            <img alt={partner.imageAlt} className="partner-mark" src={partner.image} />
             <div>
               <h3>{partner.name}</h3>
               <strong>{partner.role}</strong>

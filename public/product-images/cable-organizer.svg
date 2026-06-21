@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Cable organizer and adapter pack</title>
+  <desc id="desc">Cable ties, adapters, and coiled charging cables.</desc>
+  <rect width="320" height="220" fill="#eef4ff"/>
+  <circle cx="111" cy="104" r="48" fill="none" stroke="#16202b" stroke-width="12"/>
+  <circle cx="111" cy="104" r="23" fill="none" stroke="#2c6bff" stroke-width="9"/>
+  <rect x="178" y="62" width="63" height="47" rx="8" fill="#566577"/>
+  <rect x="190" y="74" width="39" height="12" rx="6" fill="#ffffff"/>
+  <rect x="190" y="91" width="39" height="7" rx="3.5" fill="#cbd7e5"/>
+  <path d="M183 139h63M194 123v32M235 123v32" stroke="#d95043" stroke-width="9" stroke-linecap="round"/>
+  <rect x="80" y="164" width="160" height="16" rx="8" fill="#0f9f9a"/>
+</svg>

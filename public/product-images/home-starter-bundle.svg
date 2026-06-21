@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Assorted home starter bundle</title>
+  <desc id="desc">A box of mixed home products and storage items.</desc>
+  <rect width="320" height="220" fill="#fbf2ef"/>
+  <path d="M58 88h204l-22 84H80z" fill="#d79a16"/>
+  <path d="M58 88l42-34h128l34 34z" fill="#f4bd48"/>
+  <rect x="92" y="109" width="42" height="52" rx="6" fill="#ffffff"/>
+  <rect x="147" y="96" width="34" height="65" rx="8" fill="#0f9f9a"/>
+  <rect x="194" y="113" width="38" height="48" rx="5" fill="#2c6bff"/>
+  <circle cx="112" cy="128" r="11" fill="#d95043"/>
+  <path d="M86 184h148" stroke="#b98619" stroke-width="8" stroke-linecap="round"/>
+</svg>

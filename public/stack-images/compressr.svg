@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">compressr stack mark</title>
+  <rect width="160" height="160" rx="28" fill="#eff9f5"/>
+  <path d="M38 55h84M38 80h58M38 105h36" stroke="#16202b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M104 76l20-20M124 76l-20-20M104 104l20 20M124 104l-20 20" stroke="#0f9f9a" stroke-width="9" stroke-linecap="round"/>
+</svg>

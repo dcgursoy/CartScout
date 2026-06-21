@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Leather travel organizer</title>
+  <desc id="desc">A premium leather travel organizer with straps and pockets.</desc>
+  <rect width="320" height="220" fill="#eff9f5"/>
+  <rect x="60" y="48" width="200" height="124" rx="18" fill="#8b4d2f"/>
+  <rect x="80" y="70" width="70" height="80" rx="8" fill="#a7613d"/>
+  <rect x="170" y="70" width="58" height="80" rx="8" fill="#6d3a25"/>
+  <path d="M160 54v112" stroke="#d9a06f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M93 97h44M93 118h44M182 100h34" stroke="#f0c49a" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="160" cy="110" r="11" fill="#d79a16"/>
+</svg>

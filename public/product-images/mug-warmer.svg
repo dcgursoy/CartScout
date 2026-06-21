@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Smart mug warmer kit</title>
+  <desc id="desc">A mug on an electric warming plate.</desc>
+  <rect width="320" height="220" fill="#eef4ff"/>
+  <ellipse cx="160" cy="158" rx="92" ry="22" fill="#cbd7e5"/>
+  <rect x="89" y="132" width="142" height="32" rx="16" fill="#16202b"/>
+  <circle cx="160" cy="93" r="50" fill="#ffffff"/>
+  <path d="M202 84h14a23 23 0 0 1 0 46h-13" fill="none" stroke="#ffffff" stroke-width="14"/>
+  <path d="M132 46c-14 17 14 24 0 42M164 37c-14 18 14 25 0 43M195 48c-13 16 13 23 0 40" fill="none" stroke="#d95043" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="203" cy="148" r="6" fill="#24a46c"/>
+</svg>

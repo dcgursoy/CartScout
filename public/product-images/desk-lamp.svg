@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Designer desk lamp bundle</title>
+  <desc id="desc">A modern desk lamp with a bright shade.</desc>
+  <rect width="320" height="220" fill="#fff8e7"/>
+  <rect x="82" y="167" width="154" height="16" rx="8" fill="#566577"/>
+  <path d="M127 165l55-83" fill="none" stroke="#16202b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M169 89l44 67" fill="none" stroke="#16202b" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="182" cy="82" r="13" fill="#2c6bff"/>
+  <path d="M168 43h74l-17 50h-74z" fill="#d79a16"/>
+  <path d="M151 93h74" stroke="#f4d06f" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="180" cy="166" r="12" fill="#0f9f9a"/>
+</svg>

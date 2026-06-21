@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Portable smoothie blender</title>
+  <desc id="desc">A small blender with fruit beside it.</desc>
+  <rect width="320" height="220" fill="#eff9f5"/>
+  <rect x="118" y="41" width="84" height="104" rx="18" fill="#c9fff3" stroke="#0f9f9a" stroke-width="7"/>
+  <path d="M126 84c25-24 49 29 69 2v51h-69z" fill="#24a46c"/>
+  <rect x="111" y="144" width="98" height="35" rx="14" fill="#16202b"/>
+  <circle cx="160" cy="163" r="7" fill="#ffffff"/>
+  <circle cx="83" cy="157" r="22" fill="#d95043"/>
+  <circle cx="233" cy="154" r="19" fill="#d79a16"/>
+  <path d="M75 142c10-12 22-12 32 0" stroke="#24a46c" stroke-width="6" stroke-linecap="round"/>
+</svg>

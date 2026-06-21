@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Fireworks AI stack mark</title>
+  <rect width="160" height="160" rx="28" fill="#fff8e7"/>
+  <path d="M80 27v106M38 49l84 62M122 49l-84 62" stroke="#d95043" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="80" cy="80" r="18" fill="#16202b"/>
+  <circle cx="80" cy="80" r="7" fill="#f4bd48"/>
+</svg>

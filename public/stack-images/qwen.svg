@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Qwen stack mark</title>
+  <rect width="160" height="160" rx="28" fill="#eef4ff"/>
+  <circle cx="80" cy="74" r="43" fill="#2c6bff"/>
+  <path d="M61 74c0-13 9-22 22-22s22 9 22 22-9 22-22 22c-6 0-11-2-15-5l-15 15" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M95 96l23 24" stroke="#16202b" stroke-width="12" stroke-linecap="round"/>
+</svg>

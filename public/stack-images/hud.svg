@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">HUD stack mark</title>
+  <rect width="160" height="160" rx="28" fill="#16202b"/>
+  <path d="M34 45v70M126 45v70M34 80h92" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="80" cy="80" r="28" fill="none" stroke="#2c6bff" stroke-width="12"/>
+</svg>

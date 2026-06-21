@@ -14,6 +14,8 @@ export type MetricSnapshot = {
 export type StackPartner = {
   name: string
   mark: string
+  image: string
+  imageAlt: string
   role: string
   description: string
 }
